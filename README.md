@@ -45,7 +45,8 @@ Vulnerability #2: CSRF
 By submitted a link in the comments section and tricking the admin (or through phishing), you're able to create a new user on the site.
 - ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/red2_csrf.gif)
 
-
 ## Notes
 
 Describe any challenges encountered while doing the work
+
+- I had some issues when the rest of the class was working on this with some exploits colliding with my work. I just waited for things to calm down and tried again.
