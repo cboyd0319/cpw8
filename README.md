@@ -18,7 +18,9 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: __________________
 
-Vulnerability #2: __________________
+Vulnerability #2: Session Hijacking
+- I used the provided change_session_id.php file from the hacktools directory to capture the logged-in session id. I then opened the page in Chrome and used the same tool to change the ID to that, granting me access to the Admin section.
+- [ ] Change Session ID gif: ![](https://github.com/cboyd0319/cpw9/blob/master/gifs/blue2_Session_Hijacking.gif)
 
 
 ## Green
