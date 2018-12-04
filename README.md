@@ -37,7 +37,9 @@ User Enumeration gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/gre
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: IDOR
+- The salespeople pages are just sequential ID numbers, making it easy to gather information on information that the developer/admin _attempted_ (poorly) to hide by using Intruder to cycle through the numbers.
+IDOR gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/red1_idor.gif)
 
 Vulnerability #2: __________________
 
