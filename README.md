@@ -18,11 +18,11 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: Blind SQLi
 - Using the provided `' OR SLEEP(5)=0--'` sql statement, I was able to reproduce a blind SQLi attack
-Change Session ID gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue1_blind_sqli.gif)
+![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue1_blind_sqli.gif)
 
 Vulnerability #2: Session Hijacking
 - I used the provided change_session_id.php file from the hacktools directory to capture the logged-in session id. I then opened the page in Chrome and used the same tool to change the ID to that, granting me access to the Admin section.
-Change Session ID gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue2_Session_Hijacking.gif)
+![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue2_Session_Hijacking.gif)
 
 
 ## Green
