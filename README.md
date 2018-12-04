@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -18,30 +18,32 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: Blind SQLi
 - Using the provided `' OR SLEEP(5)=0--'` sql statement, I was able to reproduce a blind SQLi attack
-Blind SQLi gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue1_blind_sqli.gif)
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue1_blind_sqli.gif)
 
 Vulnerability #2: Session Hijacking
 - I used the provided change_session_id.php file from the hacktools directory to capture the logged-in session id. I then opened the page in Chrome and used the same tool to change the ID to that, granting me access to the Admin section.
-Change Session ID gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue2_Session_Hijacking.gif)
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/blue2_Session_Hijacking.gif)
 
 
 ## Green
 
 Vulnerability #1: Stored XSS
 - Using the provided `<script>alert('Chad found the XSS!');</script>` example, I was able to create a comment in the feedback section that executed in the Admin feedback page.
-Stored XSS gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/green1_stored_xss.gif)
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/green1_stored_xss.gif)
 
 Vulnerability #2: User Enumneration
 - By testing a few logins, the site displayed existing users with incorrect credentials in bold. The developer used a different span class for incorrect `span class="failed"` vs existing `span class="failure"` accounts.
-User Enumeration gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/green2_user_enumeration.gif)
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/green2_user_enumeration.gif)
 
 ## Red
 
 Vulnerability #1: IDOR
 - The salespeople pages are just sequential ID numbers, making it easy to gather information on information that the developer/admin _attempted_ (poorly) to hide by using Intruder to cycle through the numbers.
-IDOR gif: ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/red1_idor.gif)
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/red1_idor.gif)
 
-Vulnerability #2: __________________
+Vulnerability #2: CSRF
+By submitted a link in the comments section and tricking the admin (or through phishing), you're able to create a new user on the site.
+- ![](https://github.com/cboyd0319/cpw8/blob/master/gifs/red2_csrf.gif)
 
 
 ## Notes
